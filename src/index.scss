@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+$light: #eef9ff;
+$dark: #0c0c04;
+//$primary: #11001c;
+//$secondary: #4f0147;
+$primary: #068191;
+$secondary: #0d445b;
+$info: #23abb9;
+$success: #04c066;
+$warning: #efd103;
+$danger: #ff1521;
+
+:root {
+  font-family: "Quicksand", sans-serif;
+}
+
+@import "node_modules/bootstrap/scss/bootstrap";
+
+body {
+  background-color: #35012c;
+}
+
+.login-container {
+  height: 100vh;
+}
+
+.login-form {
+  background-color: #4f0147;
+}
+
+.login-btn {
+  background-color: #00406c;
+}
+
+.login-btn:hover {
+  background-color: #00253e;
+  opacity: 0.8;
+}
+
+.navbar {
+  background-color: #4f0147;
+}
+
+.card-bg {
+  background: linear-gradient(300deg,#d4a373,#ccd5ae,#fefae0);
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
